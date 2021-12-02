@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1271</width>
+    <height>955</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QWidget" name="Fathe_widget" native="true">
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 170, 255);</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout" stretch="1,6,2">
+      <item>
+       <widget class="QWidget" name="up_widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>24</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>工具集1.0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="middle_widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QWidget" name="widget_12" native="true">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(170, 170, 255);</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QWidget" name="widget_mid_1_1" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 0);</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,4,1">
+               <item>
+                <widget class="QWidget" name="widget" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_2">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_2">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>文件A:</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_2" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_4">
+                  <item row="0" column="0">
+                   <widget class="QLineEdit" name="lineEdit_a">
+                    <property name="font">
+                     <font>
+                      <pointsize>24</pointsize>
+                     </font>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_3" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>选择</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_mid_1_4" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 0);</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="0">
+               <item>
+                <widget class="QWidget" name="widget_7" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 255, 127);</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_7">
+                  <item>
+                   <widget class="QLabel" name="label_4">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>A关键字列：</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_key_a_col">
+                    <property name="font">
+                     <font>
+                      <pointsize>24</pointsize>
+                     </font>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_mid_1_5" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 0);</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QWidget" name="widget_8" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 255, 127);</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_8">
+                  <item>
+                   <widget class="QLabel" name="label_5">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>A对比列:</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_a_col">
+                    <property name="font">
+                     <font>
+                      <pointsize>24</pointsize>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>空格隔开的列数</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_13" native="true">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(170, 170, 255);</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QWidget" name="widget_mid_1_2" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 0);</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,0,1">
+               <item>
+                <widget class="QWidget" name="widget_6" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_9">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_3">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>文件B:</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_5" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_8">
+                  <item row="0" column="0">
+                   <widget class="QLineEdit" name="lineEdit_b">
+                    <property name="font">
+                     <font>
+                      <pointsize>24</pointsize>
+                     </font>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="widget_4" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_7">
+                  <item row="0" column="0">
+                   <widget class="QPushButton" name="pushButton_3">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>选择</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_mid_1_6" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 0);</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="0">
+               <item>
+                <widget class="QWidget" name="widget_10" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 255, 127);</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_10">
+                  <item>
+                   <widget class="QLabel" name="label_7">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>B关键字列：</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_key_b_col">
+                    <property name="font">
+                     <font>
+                      <pointsize>24</pointsize>
+                     </font>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_mid_1_7" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(85, 170, 0);</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_14">
+               <item>
+                <widget class="QWidget" name="widget_9" native="true">
+                 <property name="font">
+                  <font>
+                   <pointsize>9</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color: rgb(170, 255, 127);</string>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout_9">
+                  <item>
+                   <widget class="QLabel" name="label_6">
+                    <property name="font">
+                     <font>
+                      <pointsize>16</pointsize>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>B对比列:</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLineEdit" name="lineEdit_b_col">
+                    <property name="font">
+                     <font>
+                      <pointsize>24</pointsize>
+                     </font>
+                    </property>
+                    <property name="placeholderText">
+                     <string>空格隔开的列数</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="down_widget" native="true">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(85, 170, 255);</string>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="font">
+            <font>
+             <pointsize>24</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>执行</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>run_the_compare()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1139</x>
+     <y>855</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1270</x>
+     <y>918</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_b_col</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>get_b_col()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1070</x>
+     <y>630</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1270</x>
+     <y>634</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>select_b_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1216</x>
+     <y>236</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1270</x>
+     <y>426</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_a</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>get_path_a()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>506</x>
+     <y>231</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1270</x>
+     <y>93</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_b</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>get_path_b()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1081</x>
+     <y>225</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1270</x>
+     <y>514</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>select_a_file()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>605</x>
+     <y>235</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1270</x>
+     <y>186</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_key_a_col</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>get_key_a_col()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>319</x>
+     <y>421</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>0</x>
+     <y>739</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_a_col</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>get_a_col()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>314</x>
+     <y>604</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1270</x>
+     <y>563</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>lineEdit_key_b_col</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>get_key_b_col()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>859</x>
+     <y>429</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1374</x>
+     <y>377</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>select_a_file()</slot>
+  <slot>select_b_file()</slot>
+  <slot>run_the_compare()</slot>
+  <slot>get_path_a()</slot>
+  <slot>get_path_b()</slot>
+  <slot>get_key_a_col()</slot>
+  <slot>get_a_col()</slot>
+  <slot>get_b_col()</slot>
+  <slot>get_key_b_col()</slot>
+ </slots>
+</ui>

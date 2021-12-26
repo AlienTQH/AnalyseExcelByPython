@@ -9,11 +9,33 @@
 import os
 import pandas as pd
 
+from PyQt5 import QtCore,QtGui
 from PyQt5.Qt import *
 from resource.index_ui import Ui_Form
 
 
+
+# python
+class QEventHandler(QtCore.QObject):
+    def eventFilter(self, obj, event):
+        """
+        处理窗体内出现的事件，如果有需要则自行添加if判断语句；
+        目前已经实现将拖到控件上文件的路径设置为控件的显示文本；
+        """
+        if event.type() == QtCore.QEvent.Type.DragEnter:
+            event.accept()
+        if event.type() == QtCore.QEvent.Type.Drop:
+            md = event.mimeData()
+            if md.hasUrls():
+                url = md.urls()[0]
+                obj.setText(url.toLocalFile())
+                return True
+        return super().eventFilter(obj, event)
+
+
+
 class IndexPane(QWidget, Ui_Form):
+    call_result_signal = pyqtSignal(dict)
 
     def __init__(self, parent=None, *args, **kwargs):
         super().__init__(parent, *args, **kwargs)
@@ -24,6 +46,9 @@ class IndexPane(QWidget, Ui_Form):
 
     def init_parm(self):
         print('初始化参数')
+        self.lineEdit_a.installEventFilter(QEventHandler(self))
+        self.lineEdit_b.installEventFilter(QEventHandler(self))
+
         self.file_path_a = None
         self.file_path_b = None
         self.key_a_col = None
@@ -38,19 +63,20 @@ class IndexPane(QWidget, Ui_Form):
         # self.lineEdit_a_col.setText(self.a_col)
         # self.lineEdit_b_col.setText(self.b_col)
 
+
     def select_a_file(self):
         print('[ 打开文件 ] A')
         file_paths = QFileDialog.getOpenFileName(self, '打开A文件', './',("Tables (*.xlsx *.xls *.csv)"))
         self.file_path_a = file_paths[0]
-        if self.file_path_a is not '':
+        if self.file_path_a != '':
             self.lineEdit_a.setText(self.file_path_a)
 
 
     def select_b_file(self):
         print('[ 打开文件 ] B')
-        file_paths = QFileDialog.getOpenFileName(self, '打开B文件', './', ("Tables (*.xlsx *.xls *.csv)"))
+        file_paths = QFileDialog.getOpenFileName(self, '打开B文件', '.', ("Tables (*.xlsx *.xls *.csv)"))
         self.file_path_b = file_paths[0]
-        if self.file_path_b is not '':
+        if self.file_path_b != '':
             self.lineEdit_b.setText(self.file_path_b)
 
 
@@ -100,28 +126,39 @@ class IndexPane(QWidget, Ui_Form):
         data_key_a_list = list(data_a.iloc[:, key_a_col])
         data_key_b_list = list(data_b.iloc[:, key_b_col])
 
+        # 默认关键字最多的是A文件
+        max_file_path = self.file_path_a
         max_list = data_key_a_list
         max_data = data_a
         max_compare_a_cols = compare_a_cols
 
+        # 默认关键字最少的是B文件
+        min_file_path = self.file_path_b
         min_list = data_key_b_list
         min_data = data_b
         min_compare_b_cols = compare_b_cols
 
+        # 如果B文件关键字多，则将最大最小文件替换
         if len(data_key_a_list) == len(data_key_b_list):
             pass
         elif len(data_key_a_list) < len(data_key_b_list):
+            # 关键字多的则为B
+            max_file_path = self.file_path_b
             max_list = data_key_b_list
             max_data = data_b
             max_compare_b_cols = compare_b_cols
 
+            # 关键字少的则为A
+            min_file_path = self.file_path_a
             min_list = data_key_a_list
             min_data = data_a
             min_compare_a_cols = compare_a_cols
 
+        # 记录比较结果
         key_different = {}
         val_different = {}
 
+        # 开始比较
         for i in range(len(max_list)):
             current_key = max_list[i]
             if current_key not in min_list:
@@ -140,7 +177,13 @@ class IndexPane(QWidget, Ui_Form):
         print(key_different)
         print(val_different)
 
-        QMessageBox.information(self, '结果', '缺失 %s, 值不同的是 %s' % (str(key_different), str(val_different)))
+        # QMessageBox.information(self, '结果', '缺失 %s, 值不同的是 %s' % (str(key_different), str(val_different)))
+        result_difference = {}
+        result_difference['key_diff'] = key_different
+        result_difference['val_diff'] = val_different
+        result_difference['max_file_path'] = max_file_path
+
+        self.call_result_signal.emit(result_difference)
 
 
 
@@ -157,6 +200,9 @@ class IndexPane(QWidget, Ui_Form):
         else:
             print('[ 输入正确 ]')
             self.check_input()
+
+
+
 
 
 

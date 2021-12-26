@@ -17,13 +17,13 @@
    <item row="0" column="0">
     <widget class="QWidget" name="Fathe_widget" native="true">
      <property name="styleSheet">
-      <string notr="true">background-color: rgb(255, 170, 255);</string>
+      <string notr="true"/>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout" stretch="1,6,2">
       <item>
        <widget class="QWidget" name="up_widget" native="true">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(85, 170, 255);</string>
+         <string notr="true"/>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_3">
          <item>
@@ -47,25 +47,25 @@
       <item>
        <widget class="QWidget" name="middle_widget" native="true">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(85, 170, 255);</string>
+         <string notr="true"/>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout">
          <item>
           <widget class="QWidget" name="widget_12" native="true">
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(170, 170, 255);</string>
+            <string notr="true">background-color: rgb(206, 206, 206);</string>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_2">
             <item>
              <widget class="QWidget" name="widget_mid_1_1" native="true">
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(85, 170, 0);</string>
+               <string notr="true"/>
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="1,4,1">
                <item>
                 <widget class="QWidget" name="widget" native="true">
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  <string notr="true"/>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_2">
                   <item row="0" column="0">
@@ -89,15 +89,24 @@
                <item>
                 <widget class="QWidget" name="widget_2" native="true">
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  <string notr="true"/>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_4">
                   <item row="0" column="0">
                    <widget class="QLineEdit" name="lineEdit_a">
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>80</height>
+                     </size>
+                    </property>
                     <property name="font">
                      <font>
                       <pointsize>24</pointsize>
                      </font>
+                    </property>
+                    <property name="dragEnabled">
+                     <bool>true</bool>
                     </property>
                    </widget>
                   </item>
@@ -107,7 +116,7 @@
                <item>
                 <widget class="QWidget" name="widget_3" native="true">
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  <string notr="true"/>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_3">
                   <item row="0" column="0">
@@ -131,13 +140,13 @@
             <item>
              <widget class="QWidget" name="widget_mid_1_4" native="true">
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(85, 170, 0);</string>
+               <string notr="true"/>
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_11" stretch="0">
                <item>
                 <widget class="QWidget" name="widget_7" native="true">
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(170, 255, 127);</string>
+                  <string notr="true"/>
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_7">
                   <item>
@@ -157,6 +166,12 @@
                   </item>
                   <item>
                    <widget class="QLineEdit" name="lineEdit_key_a_col">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>80</height>
+                     </size>
+                    </property>
                     <property name="font">
                      <font>
                       <pointsize>24</pointsize>
@@ -173,13 +188,13 @@
             <item>
              <widget class="QWidget" name="widget_mid_1_5" native="true">
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(85, 170, 0);</string>
+               <string notr="true"/>
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_12">
                <item>
                 <widget class="QWidget" name="widget_8" native="true">
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(170, 255, 127);</string>
+                  <string notr="true"/>
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_8">
                   <item>
@@ -199,6 +214,12 @@
                   </item>
                   <item>
                    <widget class="QLineEdit" name="lineEdit_a_col">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>80</height>
+                     </size>
+                    </property>
                     <property name="font">
                      <font>
                       <pointsize>24</pointsize>
@@ -221,19 +242,19 @@
          <item>
           <widget class="QWidget" name="widget_13" native="true">
            <property name="styleSheet">
-            <string notr="true">background-color: rgb(170, 170, 255);</string>
+            <string notr="true">background-color: rgb(206, 206, 206);</string>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_3">
             <item>
              <widget class="QWidget" name="widget_mid_1_2" native="true">
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(85, 170, 0);</string>
+               <string notr="true"/>
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,0,1">
                <item>
                 <widget class="QWidget" name="widget_6" native="true">
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  <string notr="true"/>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_9">
                   <item row="0" column="0">
@@ -257,15 +278,24 @@
                <item>
                 <widget class="QWidget" name="widget_5" native="true">
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  <string notr="true"/>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_8">
                   <item row="0" column="0">
                    <widget class="QLineEdit" name="lineEdit_b">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>80</height>
+                     </size>
+                    </property>
                     <property name="font">
                      <font>
                       <pointsize>24</pointsize>
                      </font>
+                    </property>
+                    <property name="dragEnabled">
+                     <bool>true</bool>
                     </property>
                    </widget>
                   </item>
@@ -275,7 +305,7 @@
                <item>
                 <widget class="QWidget" name="widget_4" native="true">
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(170, 170, 127);</string>
+                  <string notr="true"/>
                  </property>
                  <layout class="QGridLayout" name="gridLayout_7">
                   <item row="0" column="0">
@@ -299,13 +329,13 @@
             <item>
              <widget class="QWidget" name="widget_mid_1_6" native="true">
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(85, 170, 0);</string>
+               <string notr="true"/>
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_13" stretch="0">
                <item>
                 <widget class="QWidget" name="widget_10" native="true">
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(170, 255, 127);</string>
+                  <string notr="true"/>
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_10">
                   <item>
@@ -325,6 +355,12 @@
                   </item>
                   <item>
                    <widget class="QLineEdit" name="lineEdit_key_b_col">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>80</height>
+                     </size>
+                    </property>
                     <property name="font">
                      <font>
                       <pointsize>24</pointsize>
@@ -341,7 +377,7 @@
             <item>
              <widget class="QWidget" name="widget_mid_1_7" native="true">
               <property name="styleSheet">
-               <string notr="true">background-color: rgb(85, 170, 0);</string>
+               <string notr="true"/>
               </property>
               <layout class="QHBoxLayout" name="horizontalLayout_14">
                <item>
@@ -352,7 +388,7 @@
                   </font>
                  </property>
                  <property name="styleSheet">
-                  <string notr="true">background-color: rgb(170, 255, 127);</string>
+                  <string notr="true"/>
                  </property>
                  <layout class="QHBoxLayout" name="horizontalLayout_9">
                   <item>
@@ -372,6 +408,12 @@
                   </item>
                   <item>
                    <widget class="QLineEdit" name="lineEdit_b_col">
+                    <property name="minimumSize">
+                     <size>
+                      <width>0</width>
+                      <height>80</height>
+                     </size>
+                    </property>
                     <property name="font">
                      <font>
                       <pointsize>24</pointsize>
@@ -397,11 +439,23 @@
       <item>
        <widget class="QWidget" name="down_widget" native="true">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(85, 170, 255);</string>
+         <string notr="true"/>
         </property>
         <layout class="QHBoxLayout" name="horizontalLayout_2">
          <item>
           <widget class="QPushButton" name="pushButton_4">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>50</height>
+            </size>
+           </property>
            <property name="font">
             <font>
              <pointsize>24</pointsize>

@@ -73,6 +73,11 @@
          </item>
          <item>
           <widget class="QTextEdit" name="textEdit_2">
+           <property name="font">
+            <font>
+             <pointsize>16</pointsize>
+            </font>
+           </property>
            <property name="styleSheet">
             <string notr="true">background-color: rgb(210, 241, 255);</string>
            </property>

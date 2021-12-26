@@ -130,13 +130,13 @@ class IndexPane(QWidget, Ui_Form):
         max_file_path = self.file_path_a
         max_list = data_key_a_list
         max_data = data_a
-        max_compare_a_cols = compare_a_cols
+        max_compare_cols = compare_a_cols
 
         # 默认关键字最少的是B文件
         min_file_path = self.file_path_b
         min_list = data_key_b_list
         min_data = data_b
-        min_compare_b_cols = compare_b_cols
+        min_compare_cols = compare_b_cols
 
         # 如果B文件关键字多，则将最大最小文件替换
         if len(data_key_a_list) == len(data_key_b_list):
@@ -146,13 +146,13 @@ class IndexPane(QWidget, Ui_Form):
             max_file_path = self.file_path_b
             max_list = data_key_b_list
             max_data = data_b
-            max_compare_b_cols = compare_b_cols
+            max_compare_cols = compare_b_cols
 
             # 关键字少的则为A
             min_file_path = self.file_path_a
             min_list = data_key_a_list
             min_data = data_a
-            min_compare_a_cols = compare_a_cols
+            min_compare_cols = compare_a_cols
 
         # 记录比较结果
         key_different = {}
@@ -165,9 +165,9 @@ class IndexPane(QWidget, Ui_Form):
                 key_different[i+2] = current_key
             else:
                 cur_index_key_min = min_list.index(current_key)
-                for j in range(len(max_compare_a_cols)):
-                    current_val_max = max_data.iloc[i, max_compare_a_cols[j]-1]
-                    current_val_min = min_data.iloc[cur_index_key_min, min_compare_b_cols[j]-1]
+                for j in range(len(max_compare_cols)):
+                    current_val_max = max_data.iloc[i, max_compare_cols[j]-1]
+                    current_val_min = min_data.iloc[cur_index_key_min, min_compare_cols[j]-1]
                     if pd.isna(current_val_max) and pd.isna(current_val_min):
                         print('nan')
                     elif current_val_max != current_val_min:
